@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>NFT — Landing Page</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+  <body>
+    <div class="page-wrapper">
+      <header class="site-header">
+        <div class="container header-inner">
+          <div class="brand"><img src="assets/img/Frame.png" alt="" /></div>
+
+          <nav class="main-nav" aria-label="Navigation principale">
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Top sales</a></li>
+              <li><a href="#">Collections</a></li>
+              <li><a href="#">Our blog</a></li>
+              <li><a href="#">About us</a></li>
+            </ul>
+          </nav>
+
+          <div class="header-actions">
+            <a class="btn btn-primary" id="sign">Sign up</a>
+            <a class="btn btn-outline" id="connect" href="#">Connect Wallet</a>
+          </div>
+
+          <button
+            class="hamburger"
+            aria-label="Ouvrir le menu"
+            aria-expanded="false"
+            aria-controls="mobile-nav"
+          >
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+
+        <div id="mobile-nav" class="mobile-nav" aria-hidden="true">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Top sales</a></li>
+            <li><a href="#">Collections</a></li>
+            <li><a href="#">Our blog</a></li>
+            <li><a href="#">About us</a></li>
+          </ul>
+          <div class="mobile-actions">
+            <a class="btn btn-primary" href="#">Sign up</a>
+            <a id="connect-hamb" class="btn btn-outline" href="#">Connect Wallet</a>
+          </div>
+        </div>
+      </header>
+
+      <main>
+        <section class="hero container">
+          <div class="hero-left">
+            <h1 class="hero-title">See the NFT<br />new world</h1>
+            <p class="lead">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu
+              turpis molestie.
+            </p>
+            <div class="btn-action">
+              <div><a class="hero-cta" href="#">Discover Now</a></div>
+              <div>
+                <img
+                  style="cursor: pointer"
+                  src="assets/img/Bouton.png"
+                  class="btn-image"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-right">
+            <div class="visual">
+              <img
+                class="visual-img visual-img--large"
+                src="assets/img/h2.png"
+              />
+              <img
+                class="visual-img visual-img--small"
+                src="assets/img/h1.png"
+              />
+              <img class="visual-img--sphere" src="assets/img/Sphere.png" />
+            </div>
+          </div>
+        </section>
+
+        <section class="collections container">
+          <div class="collections-header">
+            <h2>Our Collections</h2>
+            <a class="view-more" href="#">View more</a>
+          </div>
+
+          <div
+            class="filters"
+            role="tablist"
+            aria-label="Filtrer par catégorie"
+          >
+            <button class="filter-btn active" data-filter="all">
+              All categories
+            </button>
+            <button class="filter-btn" data-filter="art">Art</button>
+            <button class="filter-btn" data-filter="collectibles">
+              Collectibles
+            </button>
+            <button class="filter-btn" data-filter="gaming">Gaming</button>
+            <button class="filter-btn" data-filter="sport">Sport</button>
+          </div>
+
+          <div class="cards" id="cardsGrid">
+            <article class="card" data-category="art">
+              <div class="card-media">
+                <img class="image" src="assets/img/c4.png" />
+              </div>
+              <div class="card-body">
+                <h3>CyberPunk</h3>
+                <div class="card-actions">
+                  <span class="meta">0.68</span>
+                </div>
+              </div>
+              <div class="card-body-1">
+                <button class="button-click">Place a Bid</button>
+              </div>
+            </article>
+
+            <article class="card" data-category="gaming">
+              <div class="card-media">
+                <img class="image" src="assets/img/c2.png" />
+              </div>
+              <div class="card-body">
+                <h3>BasketBall Bot - Upper</h3>
+                <div class="card-actions">
+                  <span class="meta">0.48</span>
+                </div>
+              </div>
+              <div class="card-body-1">
+                <button class="button-click">Place a Bid</button>
+              </div>
+            </article>
+
+            <article class="card" data-category="gaming">
+              <div class="card-media">
+                <img class="image" src="assets/img/c3.png" />
+              </div>
+              <div class="card-body">
+                <h3>Space X-Viper</h3>
+                <div class="card-actions">
+                  <span class="meta">0.58</span>
+                </div>
+              </div>
+              <div class="card-body-1">
+                <button class="button-click">Place a Bid</button>
+              </div>
+            </article>
+
+            <article class="card" data-category="sport">
+              <div class="card-media">
+                <img class="image" src="assets/img/c1.png" />
+              </div>
+              <div class="card-body">
+                <h3>Snoop Dogg</h3>
+                <div class="card-actions">
+                  <span class="meta">0.68</span>
+                </div>
+              </div>
+              <div class="card-body-1">
+                <button class="button-click">Place a Bid</button>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="steps container">
+          <h2>Create and Sell Now</h2>
+          <div class="step-grid">
+            <div class="step">
+              <img class="sell-image" src="assets/img/wallet.png" alt="" />
+              <h3 class="titre">Set up your wallet</h3>
+              <p class="phrase">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem
+                aperiam mollitia dicta asperiores suscipit voluptatum rerum.
+              </p>
+            </div>
+            <div class="step">
+              <img class="sell-image" src="assets/img/cloud.png" alt="" />
+              <h3 class="titre">Add your NFTs</h3>
+              <p class="phrase">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem
+                aperiam mollitia dicta asperiores suscipit voluptatum rerum.
+              </p>
+            </div>
+            <div class="step">
+              <img class="sell-image" src="assets/img/bitcoin.png" alt="" />
+              <h3 class="titre">Promote your NFTs</h3>
+              <p class="phrase">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem
+                aperiam mollitia dicta asperiores suscipit voluptatum rerum.
+              </p>
+            </div>
+            <div class="step">
+              <img class="sell-image" src="assets/img/price.png" alt="" />
+              <h3 class="titre">Sell your NFTs</h3>
+              <p class="phrase">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem
+                aperiam mollitia dicta asperiores suscipit voluptatum rerum.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="cta">
+          <div class="cta-inner container">
+            <h2>Build your NFT profile</h2>
+            <br />
+            <p>Join almost 10k NFT profiles on Digital.</p>
+            <br />
+            <a class="btn btn-primary" href="#">Sign up now</a>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <img class="brand" src="assets/img/Frame.png" alt="" />
+        <br />
+        <hr />
+        <br />
+        <div class="container footer-inner">
+          <p class="footer-title">Create Explore & Collect Digital NFTs</p>
+          <nav class="footer-links">
+            <a href="#">Privacy</a>
+            <a href="#">Terms & Conditions</a>
+            <a href="#">About us</a>
+          </nav>
+        </div>
+      </footer>
+    </div>
+
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
